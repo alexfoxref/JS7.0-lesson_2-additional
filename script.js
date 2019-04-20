@@ -10,19 +10,20 @@ let week = [
     'Sunday'
 ];
 
-let modal = document.querySelector('.modal');
+const modal = document.querySelector('.modal');
 
 for (let i = 0; i < week.length; i++) {
-    let weekDay = document.createElement('p');
+    let weekDay = document.createElement('p'),
+        weekPrint = week[i];
 
     if (i == 5 || i == 6) {
-        weekDay.innerHTML = `<b>${week[i]}</b>`;
-    } else if (i == 4) {
-        weekDay.innerHTML = `<i>${week[i]}</i>`;
-    } else {
-        weekDay.innerHTML = `${week[i]}`;
+        weekPrint = weekPrint.bold();
+    };
+    if (i == 5) {
+        weekPrint = weekPrint.italics();
     };
 
+    weekDay.innerHTML = `${weekPrint}`;
     modal.appendChild(weekDay);
 };
 
