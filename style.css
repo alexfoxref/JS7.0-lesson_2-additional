@@ -11,16 +11,19 @@
 
     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
     text-align: center;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px 50px 30px;
     border-radius: 3px;
     background-color: #fff;
-    transition: all .2s;
+    transition: opacity .2s;
 }
 
 .closeButton {
     width: 100px;
 
-    margin: 0 auto;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -120%);
 
     padding: 10px;
     text-align: center;

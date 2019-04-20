@@ -26,11 +26,7 @@ for (let i = 0; i < week.length; i++) {
     modal.appendChild(weekDay);
 };
 
-let closeButton = document.createElement('button');
-
-closeButton.classList.add('closeButton');
-closeButton.innerHTML = 'Ok';
-modal.appendChild(closeButton);
+let closeButton = document.querySelector('.closeButton');
 
 closeButton.addEventListener('click', () => {
     modal.classList.remove('active');
@@ -40,11 +36,11 @@ closeButton.addEventListener('click', () => {
 
 let arr = [
     '3465',
-    '3567',
-    '6574',
+    '567',
+    '76574',
     '67',
-    '75',
-    '6',
+    '5',
+    '38766',
     '0'
 ];
 
